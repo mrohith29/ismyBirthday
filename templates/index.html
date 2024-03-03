@@ -3,10 +3,32 @@
 
 <head>
     <title>ismyBirthday</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .birthday {
+            color: #ff6347;
+        }
+    </style>
 </head>
 
 <body>
-    {% if myBirthday %}
+    {% if mybirthday %}
         <h1>Happy Birthday to me!</h1>
     {% else %}
         <h1>It's not my birthday</h1>
