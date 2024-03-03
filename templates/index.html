@@ -24,6 +24,16 @@
         .birthday {
             color: #ff6347;
         }
+
+        a {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            text-align: right;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
     </style>
 </head>
 
@@ -31,7 +41,13 @@
     {% if mybirthday %}
         <h1>Happy Birthday to me!</h1>
     {% else %}
-        <h1>It's not my birthday</h1>
+        <h1>Today is not my birthday</h1>
     {% endif %}
+    
+    <a href="/date">Check my birth date?</a>
+
+    <!-- <dev id="date"> -->
+        <!-- <h1>November 29</h1> -->
+    <!-- </dev> -->
 </body>
 </html>
